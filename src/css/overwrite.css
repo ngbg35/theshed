@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Mukta:700');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+body{
+    background-color: white;
+}
+
+.featured {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width:92.5%;
+    
+}
+
+
+.centerdiv {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+    margin-bottom: -30px;
+    margin-top: 10px;
+    font-family: 'Space Mono', monospace;
+    
+
+}
+
+.centerdivArticle {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    
+    margin-bottom: -30px;
+    margin-top: 30px;
+    font-family: 'Manrope', sans-serif;
+    
+
+}
+
+.centerdivArticleHome {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    
+    margin-bottom: -30px;
+    margin-top: 30px;
+    font-family: 'Manrope', sans-serif;
+    
+
+}
+
+.mainlinksdiv {
+margin-bottom: 30px;
+margin-top: 30px;
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 100%;
+
+/*
+border-bottom: solid 0.5px rgb(224, 222, 222);
+box-shadow: 3px#888888;
+*/
+}
+
+.socialicon{
+    margin-top: 20px;
+    display: inline-block;
+    transition: all 0.2s;
+}
+
+.socialicon:hover{
+    color: rgb(23, 124, 124);
+    
+}
+
+.mainlinks{
+    display: inline-block;
+    font-size: 1rem;
+    list-style-type: none;
+
+}
+
+
+
+a {
+ text-decoration: none;   
+ color: black;
+ transition: all 0.2s;
+ font-family: 'Space Mono', monospace;
+
+
+
+}
+
+li {
+    display: inline;
+    padding: 0px 20px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+a:hover {
+    color: rgb(23, 124, 124);
+    
+}
+
+
+.centerimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+
+.backButton {
+    
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    margin: 0px auto;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    
+    
+}
+
+
+
+.centerbutton {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+.sidebar {
+    margin-top: 14%;
+    position: fixed;
+    top: 0;
+    width: 200px;
+    min-height: 200px;
+    margin-left: 40px;
+    color: white;
+    z-index: 999;
+  }
+
+  .testad {
+      text-align: center;
+      margin-top: 100px;
+  }
+
+  .sidebarright {
+    
+    margin-top: 14%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    min-height: 200px;
+    margin-right: 40px;
+    color: white;
+    z-index: 999;
+  }
+
+  .textoverdiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+  }
+
+  .maintext {
+    font-size: 3rem;
+    color: white;
+  }
+
+  .subtext {
+    font-size: 1rem;
+    color: white;
+  }
+
+.card__image:after {
+    width: 80px;
+    height: 80px;
+    background: none;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 50%;
+    left: 50%;
+    margin-left: -40px;
+    margin-top: -40px;
+}
+
+
+.maincontainer {
+    display: block;
+    max-width: 60%;
+    margin: 3rem auto;
+
+}  
+
+@media screen and (max-width: 600px) {
+    .mainlinks {
+        font-size: 1rem;
+    }
+
+    .centerdivArticle {
+
+        width: 90%;
+        
+     
+    
+    }
+
+    .centerimg {
+        width: 50%;
+      }
+
+    li{
+        display: block;
+        margin-top: 10px;
+    }
+
+    .featured {
+        display: none;
+        margin-left: auto;
+        margin-right: auto;
+        max-width:80%;
+    }
+    .sidebar, .sidebarright{
+        display: none;
+    }
+
+    .maincontainer {
+        
+        max-width: 100%;
+        
+       
+    }
+
+  }
+
+
+
+  /* NEW STYLE FOR SHED */
+
+  .bungee {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 2.5rem;
+    color: black;
+    margin-bottom: 20px;
+  }
+
+  .monospace {
+    font-family: 'Space Mono', monospace;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+  }
+
+  .monospace-smaller {
+    font-family: 'Space Mono', monospace;
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }

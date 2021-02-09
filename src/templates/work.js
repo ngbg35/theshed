@@ -4,10 +4,11 @@ import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Img from 'gatsby-image'
 import { graphql } from 'gatsby'
 import Layout from "../components/layout"
+import { Link } from "gatsby";
 
 export default ({ data }) => (
   <Layout>
-    <article className="sheet">
+    <article className="centerdivArticle">
       <HelmetDatoCms seo={data.datoCmsWork.seoMetaTags} />
       <div className="sheet__inner">
         <h1 className="sheet__title">{data.datoCmsWork.title}</h1>
@@ -29,6 +30,8 @@ export default ({ data }) => (
           <Img fluid={data.datoCmsWork.coverImage.fluid} />
         </div>
       </div>
+
+            
     </article>
   </Layout>
 )

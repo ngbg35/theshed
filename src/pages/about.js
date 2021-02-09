@@ -3,19 +3,20 @@ import { graphql } from 'gatsby'
 import { HelmetDatoCms } from 'gatsby-source-datocms'
 import Img from 'gatsby-image'
 import Layout from "../components/layout"
+import { Link } from "gatsby";
 
 const About = ({ data: { about } }) => (
   <Layout>
-    <article className="sheet">
+    <article className="centerdivArticle">
       <HelmetDatoCms seo={about.seoMetaTags} />
-      <div className="sheet__inner">
+      <div className="bungee">
         <h1 className="sheet__title">{about.title}</h1>
-        <p className="sheet__lead">{about.subtitle}</p>
+        <p className="monospace">{about.subtitle}</p>
         <div className="sheet__gallery">
           <Img fluid={about.photo.fluid} />
         </div>
         <div
-          className="sheet__body"
+          className="monospace"
           dangerouslySetInnerHTML={{
             __html: about.bioNode.childMarkdownRemark.html,
           }}
@@ -48,3 +49,5 @@ export const query = graphql`
     }
   }
 `
+
+
