@@ -9,56 +9,53 @@ import Layout from "../components/layout"
 
 
 
-const IndexPage = ({ data: { home } }) => (
+const IndexPage = ({ data }) => (
 
 
 
 <Layout>
 
-<article className="centerdivArticleHome">
-      
-      <div className="sheet__inner">
-        <h1 className="bungee">{home.title}</h1>
-        <p className="monospace">{home.subtitle}</p>
-        <div className="sheet__gallery">
-          <Img fluid={home.photo.fluid} />
+<Masonry className="showcase">
+      {data.allDatoCmsFeatured.edges.map(({ node: stock }) => (
+        <div key={stock.id} className="showcase__item">
+          
+          <figure className="card">
+          
+            <Link to={`/featured/${stock.slug}`} className="card__image">
+            <Img fluid={stock.coverImage.fluid} />
+            </Link>
+
+          </figure>
         </div>
-        <div
-          className="monospace-smaller"
-          dangerouslySetInnerHTML={{
-            __html: home.bioNode.childMarkdownRemark.html,
-          }}
-        />
-      </div>
-    </article>
+      ))}
+    </Masonry>
+
   </Layout>
 )
 
 export default IndexPage
 
+
+
 export const query = graphql`
-  query homeQuery {
-    home: datoCmsHome {
-      seoMetaTags {
-        ...GatsbyDatoCmsSeoMetaTags
-      }
-      title
-      subtitle
-      photo {
-        fluid(maxWidth: 600, imgixParams: { fm: "jpg", auto: "compress" }) {
-          ...GatsbyDatoCmsSizes
-        }
-      }
-      bioNode {
-        childMarkdownRemark {
-          html
+  query StockholmQuery {
+    allDatoCmsFeatured(sort: { fields: [position], order: ASC }, limit: 6) {
+      edges {
+        node {
+          id
+          title
+          slug
+          excerpt
+          coverImage {
+            fluid(maxWidth: 450, imgixParams: { fm: "jpg", auto: "compress" }) {
+              ...GatsbyDatoCmsSizes
+            }
+          }
         }
       }
     }
   }
 `
-
-
 
 /*
 
