@@ -15,14 +15,14 @@ const event = ({ data }) => (
       {data.allDatoCmsEvent.edges.map(({ node: work }) => (
         <div key={work.id} className="showcase__item">
           <figure className="card">
-            <Link to={`/works/${work.slug}`} className="card__image">
+            <Link to={`/event/${work.slug}`} className="card__image">
               <Img fluid={work.coverImage.fluid} />
             </Link>
             <figcaption className="card__caption">
               <h6 className="card__title">
-                <Link to={`/events/${work.slug}`}>{work.title}</Link>
+                <Link to={`/event/${work.slug}`}>{work.title}</Link>
               </h6>
-              <div className="card__description">
+              <div className="monospacesmall">
                 <p>{work.excerpt}</p>
               </div>
             </figcaption>
@@ -39,7 +39,7 @@ export default event
 
 export const query = graphql`
   query eventQuery {
-    allDatoCmsEvent(sort: { fields: [position], order: ASC }, limit: 6) {
+    allDatoCmsEvent(sort: { fields: [position], order: ASC }, limit: 10) {
       edges {
         node {
           id

@@ -212,8 +212,12 @@ a:hover {
 @media screen and (max-width: 600px) {
 
 
+    .centerdiv {
+        display: none;
+    }
+
     .card{
-        width: 300px;
+        width: 320px;
         
     }
 
@@ -271,6 +275,7 @@ a:hover {
 
 
 
+
   /* NEW STYLE FOR SHED */
 
   .bungee {
@@ -278,7 +283,15 @@ a:hover {
     font-size: 2.5rem;
     color: black;
     margin-bottom: 20px;
+    
   }
+
+
+.bungeelarge{
+    
+    font-family: 'Bungee Shade', cursive;
+}
+
 
   .monospace {
     font-family: 'Space Mono', monospace;
@@ -286,7 +299,7 @@ a:hover {
     font-size: 1.2rem;
   }
 
-  .monospace-smaller {
+  .monospacesmall {
     font-family: 'Space Mono', monospace;
     margin-bottom: 20px;
     font-size: 1rem;

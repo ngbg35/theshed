@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 
 
 
-const event = ({ data }) => (
+const community = ({ data }) => (
   <Layout>
  
 
@@ -20,9 +20,9 @@ const event = ({ data }) => (
             </Link>
             <figcaption className="card__caption">
               <h6 className="card__title">
-                <Link to={`/community/${commie.slug}`}>{commie.title}</Link>
+                <Link className=""to={`/community/${commie.slug}`}>{commie.title}</Link>
               </h6>
-              <div className="card__description">
+              <div className="monospacesmall">
                 <p>{commie.excerpt}</p>
               </div>
             </figcaption>
@@ -35,7 +35,7 @@ const event = ({ data }) => (
   </Layout>
 )
 
-export default event
+export default community
 
 export const query = graphql`
   query commieQuery {
