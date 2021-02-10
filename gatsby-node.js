@@ -48,7 +48,52 @@ const stockholm = graphql(`
     });
   });
 })
-        return Promise.all([malmo, stockholm])
+
+const event = graphql(`
+{
+  allDatoCmsEvent{
+    edges {
+      node {
+        slug
+      }
+    }
+  }
+}
+`).then(result => {
+  result.data.allDatoCmsEvent.edges.map(({ node: eventlist }) => {
+    createPage({
+      path: `event/${eventlist.slug}`,
+      component: path.resolve(`./src/templates/event.js`),
+      context: {
+        slug: eventlist.slug,
+      },
+    });
+  });
+})
+
+const community = graphql(`
+{
+  allDatoCmsCommunity{
+    edges {
+      node {
+        slug
+      }
+    }
+  }
+}
+`).then(result => {
+  result.data.allDatoCmsCommunity.edges.map(({ node: commie }) => {
+    createPage({
+      path: `community/${commie.slug}`,
+      component: path.resolve(`./src/templates/commie.js`),
+      context: {
+        slug: commie.slug,
+      },
+    });
+  });
+})
+
+        return Promise.all([malmo, stockholm, event, community])
 
 };
 

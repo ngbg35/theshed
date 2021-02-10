@@ -52,34 +52,7 @@ const TemplateWrapper = ({ children }) => {
       render={data => (
 
 <div>
-        <div className="sidebar">
-          <p className="testad">
-        This is an advertisement
-        </p>
-        <p className="testad">
-        This is an advertisement
-        </p>
-        <p className="testad">
-        This is an advertisement
-        </p>
-        <p className="testad">
-        This is an advertisement
-        </p>
-      </div>
-      <div className="sidebarright">
-          <p className="testad">
-        This is an advertisement
-        </p>
-        <p className="testad">
-        This is an advertisement
-        </p>
-        <p className="testad">
-        This is an advertisement
-        </p>
-        <p className="testad">
-        This is an advertisement
-        </p>
-      </div>
+
         <div className="maincontainer">
 
           <img className="centerimg"src="https://www.datocms-assets.com/42515/1612909234-sheedie2.svg"></img>
@@ -95,9 +68,9 @@ const TemplateWrapper = ({ children }) => {
 
                <li className="links"><a href="http://theshedmalmo.se/" target="_blank">Shop<FontAwesomeIcon icon={faExternalLinkAlt} /></a></li> 
 
-               <li className="links"><Link to="/archive">Community</Link></li>
+               <li className="links"><Link to="/community">Community</Link></li>
 
-               <li className="links"><Link to="/about">Events</Link></li>
+               <li className="links"><Link to="/event">Events</Link></li>
 
                <li className="links"><Link to="/about">About</Link></li>
 

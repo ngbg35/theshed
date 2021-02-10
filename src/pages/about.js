@@ -12,9 +12,7 @@ const About = ({ data: { about } }) => (
       <div className="bungee">
         <h1 className="sheet__title">{about.title}</h1>
         <p className="monospace">{about.subtitle}</p>
-        <div className="sheet__gallery">
-          <Img fluid={about.photo.fluid} />
-        </div>
+
         <div
           className="monospace"
           dangerouslySetInnerHTML={{

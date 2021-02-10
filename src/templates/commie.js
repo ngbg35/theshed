@@ -9,22 +9,22 @@ import { Link } from "gatsby";
 export default ({ data }) => (
     <Layout>
         <article className="centerdivArticle">
-            <HelmetDatoCms seo={data.datoCmsFeatured.seoMetaTags} />
+            <HelmetDatoCms seo={data.datoCmsCommunity.seoMetaTags} />
             <div className="sheet__inner">
 
-                <h1 className="bungee">{data.datoCmsFeatured.title}</h1>
-                <p className="monospace">{data.datoCmsFeatured.excerpt}</p>
+                <h1 className="bungee">{data.datoCmsCommunity.title}</h1>
+                <p className="monospace">{data.datoCmsCommunity.excerpt}</p>
                 <div className="sheet__slider">
                     <Slider infinite={true} slidesToShow={2} arrows>
-                        {data.datoCmsFeatured.gallery.map(({ fluid }) => (
-                            <img alt={data.datoCmsFeatured.title} key={fluid.src} src={fluid.src} />
+                        {data.datoCmsCommunity.gallery.map(({ fluid }) => (
+                            <img alt={data.datoCmsCommunity.title} key={fluid.src} src={fluid.src} />
                         ))}
                     </Slider>
                 </div>
                 <div
                     className="sheet__body"
                     dangerouslySetInnerHTML={{
-                        __html: data.datoCmsFeatured.descriptionNode.childMarkdownRemark.html,
+                        __html: data.datoCmsCommunity.descriptionNode.childMarkdownRemark.html,
                     }}
                 />
 
@@ -35,8 +35,8 @@ export default ({ data }) => (
 )
 
 export const query = graphql`
-  query childstockQuery($slug: String!) {
-    datoCmsFeatured(slug: { eq: $slug }) {
+  query childstockQuery3($slug: String!) {
+    datoCmsCommunity(slug: { eq: $slug }) {
       seoMetaTags {
         ...GatsbyDatoCmsSeoMetaTags
       }

@@ -41,7 +41,7 @@ body{
     
     margin-bottom: -30px;
     margin-top: 30px;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Space Mono', monospace;
     
 
 }
@@ -54,7 +54,7 @@ body{
     
     margin-bottom: -30px;
     margin-top: 30px;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Space Mono', monospace;
     
 
 }
@@ -210,6 +210,15 @@ a:hover {
 }  
 
 @media screen and (max-width: 600px) {
+
+
+    .card{
+        width: 300px;
+        
+    }
+
+    
+
     .mainlinks {
         font-size: 1rem;
     }
@@ -224,7 +233,7 @@ a:hover {
 
     .centerdivArticleHome {
 
-        width: 90%;
+        width: 100%;
         
      
     
@@ -240,7 +249,7 @@ a:hover {
     }
 
     .featured {
-        display: none;
+        
         margin-left: auto;
         margin-right: auto;
         max-width:80%;
@@ -256,6 +265,8 @@ a:hover {
        
     }
 
+
+    
   }
 
 
@@ -303,4 +314,5 @@ a:hover {
     font-size: 1rem;
     color: white;
   }
+
 
