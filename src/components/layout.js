@@ -57,26 +57,12 @@ const TemplateWrapper = ({ children }) => {
 
           <img className="centerimg"src="https://www.datocms-assets.com/42515/1612909234-sheedie2.svg"></img>
           <div className="centerdiv">Malmö's smallest co-working and creative space.<br></br>At the heart of Augustenborg Square.
-          <br></br><br></br>
+          <br></br>
           
           </div>
           <div className="mainlinksdiv">
-          
-           <ul className="mainlinks">
-              
-               <li className="links"><Link to="/">Home</Link></li>
 
-               <li className="links"><a href="http://theshedmalmo.se/" target="_blank">Shop<FontAwesomeIcon icon={faExternalLinkAlt} /></a></li> 
-
-               <li className="links"><Link to="/community">Community</Link></li>
-
-               <li className="links"><Link to="/event">Events</Link></li>
-
-               <li className="links"><Link to="/about">About</Link></li>
-
-               
-
-                 <div className="socialicon">
+          <div className="socialicon">
             {data.allDatoCmsSocialProfile.edges.map(({ node: profile }) => (
       <a
         key={profile.profileType}
@@ -88,6 +74,22 @@ const TemplateWrapper = ({ children }) => {
       </a>
     ))}
     </div>
+    <br></br><br></br>
+           <ul className="mainlinks">
+              
+               <li className="links"><Link to="/">Home</Link></li>
+
+               <li className="links"><a href="http://theshedmalmo.se/" target="_blank">Shop<FontAwesomeIcon icon={faExternalLinkAlt} /></a></li> 
+
+               <li className="links"><Link to="/community">Community</Link></li>
+
+               <li className="links"><Link to="/event">Events</Link></li>
+
+               <li className="links"><Link to="/featured/about-us">About</Link></li>
+
+               
+
+                 
             </ul>
             
 
@@ -105,9 +107,32 @@ const TemplateWrapper = ({ children }) => {
             </div>
             {children}
           </div>
+        <br></br>   <br></br>   <br></br> 
+        </div>
+         <div className="footer">
+
+         <h3 className="bungee-footer">The Shed</h3>   
+         <p class="monospace">Norra Grängesbergsgatan 35, Malmö<br></br>
+         <a className="white-link" href="mailto:hej@theshed.se">hej@theshed.se</a>
+         </p>
           
+         <div className="socialicon">
+            {data.allDatoCmsSocialProfile.edges.map(({ node: profile }) => (
+      <a
+        key={profile.profileType}
+        href={profile.url}
+        target="blank"
+        className={`social social--${profile.profileType.toLowerCase()}`}
+        style={{color: `ghostwhite`}}
+      >
+        {" "}
+      </a>
+    ))}
+    </div>
+
+         </div>
         </div>
-        </div>
+        
       )}
     />
   );
