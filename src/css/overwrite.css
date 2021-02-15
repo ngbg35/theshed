@@ -231,76 +231,21 @@ a:hover {
 
 }  
 
-@media screen and (max-width: 600px) {
 
-
-    .centerdiv {
-        display: none;
-    }
-
-    .card{
-        width: 320px;
-        
-    }
-
-    
-
-    .mainlinks {
-        font-size: 1rem;
-    }
-
-    .centerdivArticle {
-
-        width: 90%;
-        
-     
-    
-    }
-
-    .centerdivArticleHome {
-
-        width: 100%;
-        
-     
-    
-    }
-
-    .centerimg {
-        width: 50%;
-      }
-
-    li{
-        display: block;
-        margin-top: 10px;
-    }
-
-    .featured {
-        
-        margin-left: auto;
-        margin-right: auto;
-        max-width:80%;
-    }
-    .sidebar, .sidebarright{
-        display: none;
-    }
-
-    .maincontainer {
-        
-        max-width: 100%;
-        
-       
-    }
-
-
-    
-  }
 
 
 
 
   /* NEW STYLE FOR SHED */
 
+.centerText{
+    text-align: center;
+}
 
+hr {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
   h4{
  
@@ -313,7 +258,7 @@ a:hover {
   }
 
   .readmorelink{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-decoration: underline;
     
   }
@@ -379,3 +324,70 @@ a:hover {
 
 
 
+@media screen and (max-width: 600px) {
+
+h4{
+    font-size: 2rem;
+}
+ 
+
+    .centerdiv {
+        display: none;
+    }
+
+    .card{
+        width: 320px;
+        
+    }
+
+    
+
+    .mainlinks {
+        font-size: 1rem;
+    }
+
+    .centerdivArticle {
+
+        width: 90%;
+        
+     
+    
+    }
+
+    .centerdivArticleHome {
+
+        width: 100%;
+        
+     
+    
+    }
+
+    .centerimg {
+        width: 50%;
+      }
+
+    li{
+        display: block;
+        margin-top: 10px;
+    }
+
+    .featured {
+        
+        margin-left: auto;
+        margin-right: auto;
+        max-width:80%;
+    }
+    .sidebar, .sidebarright{
+        display: none;
+    }
+
+    .maincontainer {
+        
+        max-width: 100%;
+        
+       
+    }
+
+
+    
+  }
