@@ -14,6 +14,11 @@ strong {
     color: black;
 }
 
+.g-maps {
+    height: 400px;
+    width: 400px;
+}
+
 /* FOOTER */
 
 .footer{
@@ -325,6 +330,11 @@ hr {
 
 
 @media screen and (max-width: 600px) {
+
+    .g-maps {
+        height: 200px;
+        width: 200px;
+    }
 
 h4{
     font-size: 2rem;
