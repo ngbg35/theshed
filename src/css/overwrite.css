@@ -16,7 +16,7 @@ strong {
 
 .g-maps {
     height: 400px;
-    width: 400px;
+    width: 600px;
 }
 
 /* FOOTER */
@@ -332,8 +332,8 @@ hr {
 @media screen and (max-width: 600px) {
 
     .g-maps {
-        height: 200px;
-        width: 200px;
+        height: 300px;
+        width: 300px;
     }
 
 h4{
