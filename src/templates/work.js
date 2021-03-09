@@ -21,7 +21,7 @@ export default ({ data }) => (
           </Slider>
         </div>
         <div
-          className="sheet__body"
+          className="gorgonzola"
           dangerouslySetInnerHTML={{
             __html: data.datoCmsWork.descriptionNode.childMarkdownRemark.html,
           }}

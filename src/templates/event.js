@@ -10,7 +10,7 @@ export default ({ data }) => (
     <Layout>
         <article className="centerdivArticle">
             <HelmetDatoCms seo={data.datoCmsEvent.seoMetaTags} />
-            <div className="sheet__inner">
+            <div className="mozarella">
 
                 <h1 className="bungee">{data.datoCmsEvent.title}</h1>
                 <p className="monospace">{data.datoCmsEvent.excerpt}</p>
