@@ -81,8 +81,9 @@ const TemplateWrapper = ({ children }) => {
 
                <li className="links"><a href="http://theshedmalmo.se/" target="_blank">Shop<FontAwesomeIcon icon={faExternalLinkAlt} /></a></li> 
 
+              {/*
                <li className="links"><Link to="/community">Community</Link></li>
-
+              */}
                <li className="links"><Link to="/event">Events</Link></li>
 
                <li className="links"><Link to="/featured/about-us">About</Link></li>

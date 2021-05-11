@@ -56,7 +56,7 @@ strong {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
     text-align: center;
     margin-bottom: -30px;
     margin-top: 10px;
@@ -71,7 +71,7 @@ strong {
     margin-left: auto;
     margin-right: auto;
     
-    width: 50%;
+    width: 100%;
     
     margin-bottom: -30px;
     margin-top: 30px;
@@ -87,9 +87,9 @@ strong {
 }
 
 .gorgonzola {
-    width: 100%;
+    width: 60%;
+    margin: 0px auto;
 
- 
    }
 
    .sheet__inner {
@@ -100,9 +100,8 @@ strong {
 
 .centerdivArticleHome {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+    margin: 0px auto;
+    width: 100%;
     
     margin-bottom: -30px;
     margin-top: 30px;
@@ -290,7 +289,7 @@ hr {
     font-size: 2.5rem;
     color: black;
     margin-bottom: 19px;
-    
+    text-align: center;
   }
 
   .bungee-footer{
@@ -312,6 +311,9 @@ hr {
     font-family: 'Space Mono', monospace;
     margin-bottom: 20px;
     font-size: 1.2rem;
+    text-align: center;
+    width: 60%;
+    margin: 0px auto;
     
   }
 
